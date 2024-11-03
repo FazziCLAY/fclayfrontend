@@ -1,0 +1,51 @@
+// Misc.
+$misc: (
+  z-index-base: 1000,
+);
+
+// Duration.
+$duration: (
+  menu: 0.5s,
+  transition: 0.2s,
+);
+
+// Size.
+$size: (
+  element-height: 2.75em,
+  element-margin: 2em,
+  section-spacing: 3em,
+  section-spacing-small: 1.5em,
+  menu: 35em,
+);
+
+// Font.
+$font: (
+  family: (
+     "Roboto", sans-serif
+  ),
+  family-fixed: (
+          "Roboto", sans-serif
+  ),
+  family-heading: (
+          "Roboto", sans-serif
+  ),
+  weight: 400,
+  weight-bold: 700,
+  weight-heading: 400,
+  weight-heading-bold: 800,
+  weight-heading-extrabold: 900,
+  kerning-heading: 0.15em,
+);
+
+// Palette.
+$palette: (
+  bg: #360032,
+  bg-alt: #1a0018,
+  fg: #ffffff,
+  fg-bold: #fcfcfc,
+  fg-light: #ffffff,
+  border: rgba(41, 1, 1, 0.67),
+  border-bg: rgba(160, 160, 160, 0.075),
+  border-alt: rgba(160, 160, 160, 0.65),
+  accent: #2e59ba,
+);
