@@ -9,6 +9,8 @@
 #sidebar {
   margin-right: _size(section-spacing);
   min-width: 17em;
+  padding-top: 4.5em; // <-- moved from _header.scss
+
   width: 22em;
   padding-left: 5em;
 

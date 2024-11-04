@@ -5,14 +5,6 @@ const routes = [
     path: '/',
   },
   {
-    label: 'Резюме',
-    path: '/resume',
-  },
-  {
-    label: 'Проекты',
-    path: '/projects',
-  },
-  {
     label: 'Связаться',
     path: '/contact',
   },

@@ -47,7 +47,7 @@ const CurrentMusic = React.memo(() => {
       return null;
     }
 
-    const mobile = song.isMobile;
+    const mobile = musicStatus.isMobile;
     const artImageUrl = song.artHttpUrl;
     const playerUrl = isSet(ICONS[song.player]) ? ICONS[song.player] : UNKNOWN_PLAYER_ICON;
     const jsonOverdue = Date.now() - updatedAt; // ms
@@ -67,7 +67,7 @@ const CurrentMusic = React.memo(() => {
         />
         <img
           title="Mobile"
-          hidden={mobile}
+          hidden={!mobile}
           id="fclay-header-music-icon-mobileindicator"
           alt="[IMG]"
           src="/img/smartphone-light.png"

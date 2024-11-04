@@ -24,6 +24,20 @@ body {
   }
 }
 
+@media print {
+  //:not(.data-print) {
+  //  all: unset; // Сбросить все стили
+  //}
+
+  header, section {
+    display: none; // Скрыть все элементы по умолчанию
+  }
+  .data-print {
+    display: block; // Показать элементы с data-print
+    color: red; // Установить цвет текста в красный
+  }
+}
+
 body {
   background: _palette(bg-alt);
 

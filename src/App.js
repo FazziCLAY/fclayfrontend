@@ -12,6 +12,7 @@ const { PUBLIC_URL } = process.env;
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Projects = lazy(() => import('./pages/Projects'));
+const Notes = lazy(() => import('./pages/Notes'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 const projects = [
@@ -29,7 +30,7 @@ const App = () => (
         <Route path="/projects" element={<Projects />} />
         <Route path="/project/*" element={<ProjectPage />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/notes" element={<Contact />} />
+        <Route path="/notes" element={<Notes />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
