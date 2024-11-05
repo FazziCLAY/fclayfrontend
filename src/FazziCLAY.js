@@ -1,5 +1,8 @@
-export const BASE_URL = 'https://fazziclay.com';
-export const BASE_API = `${BASE_URL}/api/v1`;
+export const LOCALHOST = false;
+export const BASE_URL_HTTP = !LOCALHOST ? 'https://fazziclay.com' : 'http://localhost:8080';
+export const BASE_URL = BASE_URL_HTTP; // DEPRECATED
+export const BASE_URL_WS = !LOCALHOST ? 'wss://fazziclay.com' : 'ws://localhost:8080';
+export const BASE_API = !LOCALHOST ? `${BASE_URL_HTTP}/api/v1` : `${BASE_URL_HTTP}`;
 
 export function isNoSet(m) {
   return m == null || m === undefined || m === -1;
