@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { styled } from '@mui/material/styles';
-import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import {
   // eslint-disable-next-line import/named
   BASE_API, emptymize, humanizeDuration, isSet, sumUnknown, truncateString,
