@@ -1,8 +1,12 @@
-const ENABLED = true;
+const ENABLED_ILOG = false;
+const ENABLED_FLOG = false;
 
 export function ilog(m) {
-  if (!ENABLED) return;
+  if (!ENABLED_ILOG) return;
   console.log(`ILOG: ${m}`);
 }
 
-export default ilog;
+export function flog(m) {
+  if (!ENABLED_FLOG) return;
+  console.log(`FLOG: ${m}`);
+}
