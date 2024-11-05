@@ -1,23 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import Main from '../layouts/Main';
-
-import routes from '../data/routes';
+import { NotesTabsProvider } from '../components/Notes/NotesTabsProvider';
+import { NotesProvider } from '../components/Notes/NotesProvider';
+import NotesTabs from '../components/Notes/NotesTabs';
+import NotesEditor from '../components/Notes/NotesEditor';
 
 const Notes = () => (
-  <div>
-    {routes
-      .filter((l) => !l.index)
-      .map((l) => (
-        <Link key={l.label} to={l.path}>
-          {l.label}
-        </Link>
-      ))}
-    <span>uwu</span>
-    <h1>Заметки</h1>
-    <h2>{Date.now().toString()}</h2>
-  </div>
+  <NotesTabsProvider>
+    <div>
+      <NotesTabs />
+      <NotesProvider>
+        <NotesEditor />
+      </NotesProvider>
+    </div>
+  </NotesTabsProvider>
 );
 
 export default Notes;
