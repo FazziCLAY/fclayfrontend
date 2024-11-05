@@ -69,6 +69,9 @@ export function humanizeDuration(p, d) {
 }
 
 export function truncateString(str, num) {
+  if (!str) {
+    return '!str';
+  }
   // Slice 'str' upto the given length
   const res = str.slice(0, num);
   // If 'num' (max-length) is <=3 then, append '...'
