@@ -3,7 +3,8 @@ import Markdown from 'markdown-to-jsx';
 import { useNotesContext } from './NotesProvider';
 import { useNotesTabsContext } from './NotesTabsProvider';
 import { flog } from '../../Logger';
-import { truncateString } from '../../FazziCLAY';
+// eslint-disable-next-line import/named
+import { hashCode, truncateString } from '../../FazziCLAY';
 
 const TextInput = () => {
   const {
@@ -15,8 +16,8 @@ const TextInput = () => {
   } = useNotesTabsContext();
 
   const [textN, setTextN] = useState('F');
-  const prevTextRef = useRef(textN); // Хранит предыдущее состояние
   const textareaRef = useRef(null);
+  const keyStart = useRef(0);
 
   const setNoteText = (ttt) => {
     setNotes({ ...notes, text: ttt, latestEdit: Date.now() });
@@ -35,9 +36,14 @@ const TextInput = () => {
     const data = notes.text;
 
     // Сравниваем с предыдущим значением текста
-    if (data !== prevTextRef.current) {
-      setTextN(data);
-      prevTextRef.current = data; // Обновляем предыдущее состояние
+    if (data !== textN) {
+      console.log(`keyStart=${keyStart.current} notes.latestEdit=${notes.latestEdit}`);
+      if (Math.abs(keyStart.current - notes.latestEdit) > 555) {
+        console.warn(`OVERWRITING TEXTAREA data=${hashCode(data)}; textN=${hashCode(textN)} keyStart::diff=${-keyStart.current + notes.latestEdit}`);
+        setTextN(data);
+      } else {
+        console.warn(`Cancel overwiting because keyStart > latestEdit; diff=${keyStart.current - notes.latestEdit}`);
+      }
     }
   }, [notes]); // Запускается один раз
 
@@ -48,6 +54,8 @@ const TextInput = () => {
   const handleChange = (event) => {
     flog(`handleChange = ${truncateString(event.target.value, 10)}`);
     if (updatingFromServer || locked) return;
+    keyStart.current = Date.now();
+    console.warn(`keyStart now is ${keyStart.current}`);
     setTextN(event.target.value);
     setNoteText(event.target.value);
   };

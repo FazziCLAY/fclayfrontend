@@ -12,6 +12,19 @@ export function isSet(m) {
   return !isNoSet(m);
 }
 
+export function hashCode(s) {
+  if (!s) {
+    return 'null';
+  }
+  return s.split('').reduce((_a, b) => {
+    let a = _a;
+    // eslint-disable-next-line no-bitwise
+    a = ((a << 5) - a) + b.charCodeAt(0);
+    // eslint-disable-next-line no-bitwise
+    return a & a;
+  }, 0);
+}
+
 export function emptymize(prefix, x, suffix) {
   if (x === undefined) {
     return '';
