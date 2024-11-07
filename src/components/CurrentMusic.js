@@ -14,6 +14,7 @@ const ICONS = {
   firefox: '/img/firefox-icon.svg',
   aimp: '/img/aimp.ico',
   clementine: '/img/clementine-icon.svg',
+  youtube: '/img/youtube-icon.ico',
 };
 const UNKNOWN_PLAYER_ICON = '/img/unknown-player.png';
 
