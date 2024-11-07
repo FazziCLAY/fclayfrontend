@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import Markdown from 'markdown-to-jsx';
 import { useNotesContext } from './NotesProvider';
 import { useNotesTabsContext } from './NotesTabsProvider';
 import { flog } from '../../Logger';
@@ -68,13 +69,40 @@ const TextInput = () => {
 
   return (
     <>
-      <textarea
-        style={{ color: `${locked ? '#898989' : ''}` }}
-        ref={textareaRef}
-        value={textN}
-        onChange={handleChange}
-        rows="20"
-      />
+      <div style={{
+        width: '100%',
+        margin: '20px',
+      }}
+      >
+        <textarea
+          style={{
+            color: `${locked ? '#898989' : ''}`,
+            width: '95%',
+            lineHeight: 1.1,
+          }}
+          ref={textareaRef}
+          value={textN}
+          onChange={handleChange}
+          rows="20"
+        />
+      </div>
+
+      <div style={{
+        width: '90%',
+        height: 100,
+        resize: 'both',
+        overflow: 'auto',
+        padding: 14,
+        background: 'linear-gradient(29deg, rgba(20,0,36,1) 0%, rgba(70,9,121,1) 35%, rgba(0,212,255,1) 100%)',
+      }}
+      >
+        <Markdown style={{
+          lineHeight: 1,
+        }}
+        >{textN}
+        </Markdown>
+      </div>
+
     </>
   );
 };

@@ -1,0 +1,20 @@
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: User-ID:	Stanislav Mironov <fazziclay@gmail.com>
+Comment: Valid from:	18.10.2024 08:56
+Comment: Valid until:	18.10.2027 12:00
+Comment: Type:	255-bit EdDSA (secret key available)
+Comment: Usage:	Signing, Encryption, Certifying User-IDs
+Comment: Fingerprint:	5E47A19300FBF46CF12DB6AC53D80B390B472328
+
+mDMEZxH4cxYJKwYBBAHaRw8BAQdAZdgHyfLbeXSQt8dzrzn0N/uN5x76BzlMvvDb
+oP0K4Ia0J1N0YW5pc2xhdiBNaXJvbm92IDxmYXp6aWNsYXlAZ21haWwuY29tPoiZ
+BBMWCgBBFiEEXkehkwD79GzxLbasU9gLOQtHIygFAmcR+HMCGwMFCQWjxZ0FCwkI
+BwICIgIGFQoJCAsCBBYCAwECHgcCF4AACgkQU9gLOQtHIygCzQD/XeRPXowFs7bz
+qQ7TcXAf88U/evtPKgTxrXy4v7W0WR4A/045d1YcFelN9lZD9jHl8xMWboz1QzP4
+5EfF3t5GlQkIuDgEZxH4cxIKKwYBBAGXVQEFAQEHQHzxqEUKbSLsukTKMm5YuXu+
+c6WTZG5021FSv0WmQw8qAwEIB4h+BBgWCgAmFiEEXkehkwD79GzxLbasU9gLOQtH
+IygFAmcR+HMCGwwFCQWjxZ0ACgkQU9gLOQtHIyhODwD/b7MMAPCNblf+ldHRpnXM
+0bfPLZnJHIhyZwDRyzpdBFIA/3M6oljSA6Ql1KFYLTscokRbcBmm5WAIPjsTNeW3
+h00F
+=pUEd
+-----END PGP PUBLIC KEY BLOCK-----
