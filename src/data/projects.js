@@ -52,6 +52,15 @@ const data = [
     sourceCode: 'https://github.com/AdamCalculator',
     date: '2024-01-01',
   },
-];
+
+  {
+    urlName: 'dartanyan',
+    title: 'Dartanyan',
+    subtitle: 'Моё Flutter приложение, клиент для fclaybackend',
+    sourceCode: 'https://github.com/FazziCLAY/Dartanyan',
+    date: '2024-11-12',
+    markdownUrl: '/project/dartanyan.md',
+  },
+].sort((a, b) => a.date < b.date);
 
 export default data;

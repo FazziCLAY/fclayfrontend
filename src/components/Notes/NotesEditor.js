@@ -139,6 +139,7 @@ const NotesEditor = () => {
 
   return (
     <div>
+      <h4>Use new Flutter app - <a href="/dartanyan">Dartanyan</a></h4>
       <div hidden>{trigger}</div>
       <h2 hidden={!locked}>LOCKED</h2>
       <p hidden>{JSON.stringify(debugStatus)}</p>

@@ -7,7 +7,7 @@ const ProjectPost = ({ data }) => (
     <article className="mini-post">
       <header>
         <h3>
-          <a href={data.link}>{data.title}</a>
+          <a href={`/project/${data.urlName}`}>{data.title}</a>
         </h3>
         <p>{data.subtitle}</p>
         <time className="published">
@@ -22,11 +22,8 @@ ProjectPost.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
-    link: PropTypes.string,
-    image: PropTypes.string,
-    date: PropTypes.string.isRequired,
     urlName: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
   }).isRequired,
 };
 
