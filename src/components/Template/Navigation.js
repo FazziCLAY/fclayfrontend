@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import Hamburger from './Hamburger';
 import routes from '../../data/routes';
-import CurrentMusic from '../CurrentMusic';
 
 // Websites Navbar, displays routes defined in 'src/data/routes'
 const Navigation = () => (
@@ -34,7 +33,7 @@ const Navigation = () => (
     <Hamburger />
 
     <div id="header-currentplaying">
-      <CurrentMusic />
+      <span>music slug</span>
     </div>
   </header>
 );

@@ -1,14 +1,23 @@
-# Java/Kotlin-разработчик
+
+# Текущий статус (legal)
+Обучаюсь на 2 курсе ВолгГТУ
+
+Изучал 1C:Предприятие на Цифровой Кафедре
+
+<br><br>
+
+# Разработчик
 ![I Love JetBrains](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![AndroidStudio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white)
 
 
 **Навыки:**
-- Spring Framework
-- Android SDK
-- AWT, Swing
-- Minecraft: _PaperMC_, _FabricMC_
+- Python (fastapi, sqlalchemy)
+- Frontend: react, TSX, VSCode
+- AI's: prompt-engenering
+- Java: Minecraft: _PaperMC_, _FabricMC_, Spring Framework, Android SDK, AWT, Swing
+- PostgreSQL (pgAdmin, orms)
 ...
 
 **Проекты:**
@@ -22,7 +31,7 @@
 
 
 
-<br>
+<br><br>
 # Системный Админстратор
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)
@@ -32,8 +41,15 @@
 **Навыки:**
 - VDS/VPS сервера, аренда, настройка, SSH, VNC
 - Сети: Wireshark, nload, ifconfig. Понимание Proxy-серверов. (с.м. [YouTube](https://www.youtube.com/watch?v=y0lMBVtHEDQ))
-- **Docker**
+- **Docker** (сети, compose)
+- **nginx**: certbot
 - **GitHub self-hosted CI/CD runner**
-- **OpenPGP**
+- **OpenPGP**, SSH, FarManager
 - **VeraCrypt**
 - **SSL/TLS**
+- Теория систем, системный анализ
+
+
+<br><br>
+# Другое
+- фанат языка `Go` хоть и не пользуюсь

@@ -43,7 +43,9 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
+      <Link to="/sitemap"><h2>Карта сайта</h2></Link>
     </section>
+
   </section>
 );
 

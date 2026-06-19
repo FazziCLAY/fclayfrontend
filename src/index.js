@@ -1,14 +1,11 @@
 import React from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App';
-import { MusicStatusProvider } from './components/MusicStatusProvider';
 
 // See https://reactjs.org/docs/strict-mode.html
 const StrictApp = () => (
   <React.StrictMode>
-    <MusicStatusProvider>
-      <App />
-    </MusicStatusProvider>
+    <App />
   </React.StrictMode>
 );
 

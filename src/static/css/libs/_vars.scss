@@ -34,18 +34,17 @@ $font: (
   weight-heading: 400,
   weight-heading-bold: 800,
   weight-heading-extrabold: 900,
-  kerning-heading: 0.15em,
+  kerning-heading: 0.066em,
 );
-
-// Palette.
+// Professional dark palette — «Noir Ambré»
 $palette: (
-  bg: #360032,
-  bg-alt: #1a0018,
-  fg: #ffffff,
-  fg-bold: #fcfcfc,
-  fg-light: #ffffff,
-  border: rgba(41, 1, 1, 0.67),
-  border-bg: rgba(160, 160, 160, 0.075),
-  border-alt: rgba(160, 160, 160, 0.65),
-  accent: #2e59ba,
+  bg: #121016,                // Глубокий тёплый чёрный с едва заметным сливово-коричневым подтоном
+  bg-alt: #1e1820ea,            // Карточки/секции: насыщенный древесно-антрацитовый, фактурный
+  fg: #ede4dc,                // Основной текст: мягкий тёплый шампань/слоновая кость
+  fg-bold: #ffffff,           // Заголовки
+  fg-light: #beb4ab,         // Второстепенный текст: приглушённый тауп (тёплый серо-бежевый)
+  border: rgba(237, 228, 220, 0.10),  // Почти невидимые линии
+  border-bg: rgba(220, 237, 224, 0.05),
+  border-alt: rgba(212, 151, 106, 0.45), // Акцентная обводка (медь)
+  accent: #d4976a,            // Благородный медный/бронзовый акцент — ссылки, кнопки
 );

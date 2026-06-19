@@ -12,14 +12,9 @@ const { PUBLIC_URL } = process.env;
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Projects = lazy(() => import('./pages/Projects'));
-const Notes = lazy(() => import('./pages/Notes'));
 const NotFound = lazy(() => import('./pages/NotFound'));
-
-const projects = [
-  '1',
-  '2',
-  '4',
-];
+const Donate = lazy(() => import('./pages/Donate'));
+const SiteMap = lazy(() => import('./pages/SiteMap'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -30,7 +25,8 @@ const App = () => (
         <Route path="/projects" element={<Projects />} />
         <Route path="/project/*" element={<ProjectPage />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/notes" element={<Notes />} />
+        <Route path="/donate" element={<Donate />} />
+        <Route path="/sitemap" element={<SiteMap />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
